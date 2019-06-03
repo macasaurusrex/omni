@@ -33,6 +33,16 @@ section {
     padding: 1%;
 }
 
+.clearfix {zoom:1}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 /*----------------------------------*/
 /*  HEADINGS */
 /*----------------------------------*/
@@ -204,6 +214,10 @@ header {
 /*  MEALS */
 /*----------------------------------*/
 
+.section-steps {
+    background-color: #f4f4f4;
+}
+
 .section-meals {
     padding: 0;
 }
@@ -236,4 +250,57 @@ header {
 .meal-photo img:hover {
     transform: scale(1.03);
     opacity: 1.0;
+}
+
+/*----------------------------------*/
+/*  HOW IT WORKS */
+/*----------------------------------*/
+
+.app-screen {
+    width: 40%;
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px; 
+}
+
+.btn-app img:first-child {
+    height: 50px;
+    width: auto;
+    margin-left: 15%; 
+}
+
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.steps-box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.works-step {
+    margin-bottom: 50px;
+}
+
+.works-step div {
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    float: left;
+    padding: 5px;
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+.works-step:last-of-type {
+    margin-bottom: 90px;
 }
