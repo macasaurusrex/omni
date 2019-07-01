@@ -479,3 +479,31 @@ input:focus, textarea:focus, select:focus {
     border: 1px solid #e67e22;
     box-shadow: 0 0 10px #719ECE;
 }
+
+/*----------------------------------*/
+/*  FOOTER */
+/*----------------------------------*/
+
+footer {
+    background-color: #333;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.footer-social{
+    list-style: none;
+    float: right;
+}
+
+footer li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+footer p {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
