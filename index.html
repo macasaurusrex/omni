@@ -4,6 +4,7 @@
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css" />
     <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet"> 
@@ -14,26 +15,28 @@
         <nav>
             <div class="row">
                 <img src="resources/img/logo-white.png" alt="OmniFood Logo" class="logo">
-                <ul class="main-nav">
-                    <li><a href="#">Food Delivery</a></li>
-                    <li><a href="#">How It Works</a></li>
-                    <li><a href="#">Our Cities</a></li>
-                    <li><a href="#">Sign Up!</a></li>
+                <img src="resources/img/logo.png" alt="OmniFood Logo" class="logo-black">
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#delivery">Food Delivery</a></li>
+                    <li><a href="#howitworks">How It Works</a></li>
+                    <li><a href="#cities">Our Cities</a></li>
+                    <li><a href="#signup">Sign Up!</a></li>
                 </ul>
+                <a class="mobile-nav-icon js--nav-icon"><ion-icon name="menu"></ion-icon></a>
             </div>
         </nav>
         <div class="hero-text-box">
             <h1>Goodbye junk food.<br/> Hello super healthy meals.</h1>
-            <a class ="btn btn-full" href="#">I'm hungry!</a>
-            <a class="btn btn-ghost" href="#">Show Me More...</a>
+            <a class ="btn btn-full js--scroll-to-plans" href="#">I'm hungry!</a>
+            <a class="btn btn-ghost js--scroll-to-start" href="#">Show Me More...</a>
         </div>
     </header>
-    <section class="section-features">
+    <section class="section-features js--section-features" id="delivery">
         <div class="row">
             <h2>Get Food Fast &mdash; Not Fast Food</h2>
             <p class="long-copy">Hello, we’re OmniFood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!</p>
         </div>
-        <div class="row">
+        <div class="row js--wp-1">
             <div class="col span-1-of-4 box">
                 <ion-icon name="ios-infinite" class="icon-big"></ion-icon>
                 <h3>Up to 365 days/year</h3>
@@ -102,13 +105,13 @@
             </li>
         </ul>
     </section>
-    <section class="section-steps">
+    <section class="section-steps" id="howitworks">
         <div class="row">
             <h2>How It Works &mdash; Simple as 1, 2, 3!</h2>
         </div>
         <div class="row">
             <div class="col span-1-of-2 steps-box">
-                <img src="resources/img/app-iPhone.png" alt="OmniFood App on iPhone" class="app-screen">
+                <img src="resources/img/app-iPhone.png" alt="OmniFood App on iPhone" class="app-screen js--wp-2">
             </div>
             <div class="col span-1-of-2 steps-box">
                 <div class="works-step">
@@ -128,8 +131,8 @@
             </div>
         </div>
     </section>
-    <section class="section-cities">
-        <div class="row">
+    <section class="section-cities" id="cities">
+        <div class="row js--wp-3">
             <h2>We're Currently in These Cities!</h2>
         </div>
         <div class="row">
@@ -199,7 +202,7 @@
                         </div>
         </div>
     </section>
-    <section class="section-testimonials">
+    <section class="section-testimonials" id="testimonials">
         <div class="row">
             <h2>Our customers can't live without us!</h2>
         </div>
@@ -218,7 +221,7 @@
             </div>
         </div>
     </section>
-    <section class="section-plans">
+    <section class="section-plans" id="signup">
         <div class="row">
             <h2>Start eating healthy today!</h2>
         </div>
@@ -248,7 +251,7 @@
                 </div>
             </div>
             <div class="col span-1-of-3">
-                <div class="plan-box">
+                <div class="plan-box js--wp-4">
                     <div>
                         <h3>Pro</h3>
                         <p class="plan-price">
@@ -383,6 +386,12 @@
             <p>Copyright &copy;2019 by OmniFood. All rights reserved.</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/scripts.js"></script>
 </body>
-<script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
 </html>

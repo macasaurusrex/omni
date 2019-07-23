@@ -90,6 +90,55 @@
     .main-nav {
         display: none;
     }
+    
+    .mobile-nav-icon {
+        display: inline-block;
+    }
+
+    .main-nav {
+        float: left;
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+
+    .main-nav li {
+        display: block;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 8px 0;
+        font-size:100%;
+    }
+
+    /* sticky nav class */
+    .sticky-nav {
+        position: fixed;
+        top: 0;
+        left:0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.98);
+        box-shadow: 0 2px 2px #efefef;
+        z-index: 9999;
+    }
+
+    .sticky-nav .main-nav {
+        margin-top: 10px;
+    }
+
+    .sticky-nav .main-nav li a:link, .sticky-nav .main-nav li a:visited {
+        padding: 10px 0px;
+    }
+
+    .sticky-nav .mobile-nav-icon {
+        margin-top: 10px;
+    }
+
+    .sticky-nav .mobile-nav-icon ion-icon {
+        color: black;
+    }
 
     h1 {
         font-size: 180%;
